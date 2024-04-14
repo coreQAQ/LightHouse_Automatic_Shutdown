@@ -16,13 +16,13 @@ SecretId = os.environ["SecretId"]
 SecretKey = os.environ["SecretKey"]
 
 regions = ["ap-beijing", "ap-chengdu", "ap-guangzhou", "ap-hongkong", "ap-nanjing", "ap-shanghai", "ap-singapore", "ap-tokyo", "eu-moscow", "na-siliconvalley"]
-percent = 0.95  # 流量限额，1表示使用到100%关机，默认设置为95%
+percent = 0.2  # 流量限额，1表示使用到100%关机，默认设置为95%
 tgToken = os.environ["tgToken"]
 
 #钉钉机器人告警   
 def sendmessage(message):
     #修改为你自己的钉钉webhook
-    url = "https://oapi.dingtalk.com/robot/send?access_token=******************************************"
+    url = "https://oapi.dingtalk.com/robot/send?access_token=a23cb8bbeedc1356576bb97693ea5a39e096023e83d31eb96753ee7151291edc"
     HEADERS = {
         "Content-Type": "application/json ;charset=utf-8"
     }
